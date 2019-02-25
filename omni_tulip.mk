@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := whyred
+PRODUCT_RELEASE_NAME := tulip
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,10 +23,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := whyred
-PRODUCT_NAME := omni_whyred
+PRODUCT_DEVICE := tulip
+PRODUCT_NAME := omni_tulip
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Redmi Note 5 Pro
+PRODUCT_MODEL := Xiaomi Redmi Note 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 # enable stock zip packages flash
