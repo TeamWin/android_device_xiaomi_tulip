@@ -3,7 +3,7 @@ For building TWRP for Xiaomi Redmi Note 6 Pro ONLY
 
 To compile
 
-. build/envsetup.sh && lunch omni_whyred-eng && make -j8 recoveryimage
+. build/envsetup.sh && lunch omni_tulip-eng && make recoveryimage
 
 The Xiaomi Redmi Note 6 Pro (codenamed _"tulip"_) is a mid-range smartphone from Xiaomi announced in September 2018.
 
@@ -29,3 +29,6 @@ The Xiaomi Redmi Note 6 Pro (codenamed _"tulip"_) is a mid-range smartphone from
 ## Device picture
 
 ![Xiaomi Redmi Note 6 Pro](https://img.timesnownews.com/story/1544521578-Xiaomi_Redmi_Note_6_Pro_colours.jpg)
+
+
+Original Device Tree: https://gitlab.com/OrangeFox/Devices/tulip
