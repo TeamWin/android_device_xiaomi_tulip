@@ -94,8 +94,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-AB_OTA_UPDATER := false
-#LZMA_RAMDISK_TARGETS := recovery
 
 # TWRP specific build flags
 TARGET_OTA_ASSERT_DEVICE := tulip
@@ -126,4 +124,3 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
-#
