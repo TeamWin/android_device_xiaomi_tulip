@@ -65,19 +65,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 
-ifeq ($(FOX_BUILD_FULL_KERNEL_SOURCES),1)
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/tulip
-  BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-  TARGET_KERNEL_CONFIG := tulip-fox-aosp-pie_defconfig
-else
-  TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
-# TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-tulip-genom-miui.gz-dtb
-ifeq ($(FOX_USE_STOCK_KERNEL),1)
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-stock.gz-dtb
-endif
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
-endif
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 
@@ -125,9 +113,13 @@ TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+TW_Y_OFFSET := 88
+TW_H_OFFSET := -88
+TW_USE_TOOLBOX := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
+PLATFORM_VERSION := 16.1.0
 
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
