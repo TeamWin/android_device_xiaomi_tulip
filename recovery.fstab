@@ -5,7 +5,7 @@
 # mount point   fstype  device                               device2          flags
 /boot           emmc    /dev/block/bootdevice/by-name/boot                    	flags=display="Boot"
 /cache          ext4    /dev/block/bootdevice/by-name/cache                   	flags=display="Cache"
-/data           ext4    /dev/block/bootdevice/by-name/userdata                	flags=encryptable=footer;length=-16384;fileencryption=ice:aes-256-cts:aes-256-heh
+/data           ext4    /dev/block/bootdevice/by-name/userdata                	flags=encryptable=footer;length=-16384;fileencryption=ice
 /system_image   emmc   	/dev/block/bootdevice/by-name/system			flags=display="System_image";backup=1;flashimg=1
 /vendor_image   emmc    /dev/block/bootdevice/by-name/vendor			flags=display="Vendor_image";backup=1;flashimg=1
 
